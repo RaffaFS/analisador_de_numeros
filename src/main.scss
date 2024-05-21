@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Barlow", sans-serif;
+}
+
+body{
+    background-color: rgb(48, 47, 77);
+
+    .container{
+        max-width: 1280px;
+        margin: 0 auto;
+        text-align: center;
+
+        .title{
+            margin: 32px auto;
+            letter-spacing: 8px;
+        }
+
+        .interface_box{
+            background-color: rgb(22, 26, 48);
+            max-width: 720px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 32px;
+            border-radius: 8px;
+
+            .btn{
+                background-color: rgb(48, 47, 77);
+                padding: 4px 8px;
+                font-size: 16px;
+            }
+
+            .form{
+                display: flex;
+                justify-content: space-between;
+                max-width: 640px;
+                width: 90%;
+                margin: 0 auto;
+
+                .input_box{
+                    display: flex;
+                    gap: 32px;
+                    max-width: 420px;
+                    width: 100%;
+
+                    .number{
+                        font-size: 16px;
+                        padding: 4px;
+                        border: solid rgb(48, 47, 77) 2px;
+                        color: #000;
+                        border-radius: 4px;
+                        max-width: 140px;
+                        width: 90%;
+                    }
+                    .number_label{
+                        font-size: 24px;
+                    }
+                }
+            }
+            
+            .result_box{
+                margin: 32px auto;
+                max-width: 640px;
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                
+                .numbers_box{
+                    max-width: 210px;
+                    border-radius: 4px;
+                    width: 90%;
+                    background-color: #fff;
+                    font-size: 14px;
+
+                    p{
+                        color: #000;
+                        padding: 4px;
+                    }
+                }
+
+                .text_box{
+                    p{
+                        text-align: end;
+                        font-size: 20px;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+
+            .buttons_box{
+                .btn{
+                    margin: 0 8px;
+                }
+            }
+        }
+    }
+}
