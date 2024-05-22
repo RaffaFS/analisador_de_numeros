@@ -26,21 +26,26 @@ function addNumber(e){
 }
 
 function analyse(){
-    const txtBox = document.querySelector('#text_box')
+    if(allNumbers.length >= 1){
+        const txtBox = document.querySelector('#text_box')
 
-    const total = allNumbers.length
-    const maior = Math.max(...allNumbers)
-    const menor = Math.min(...allNumbers)
-    const soma = allNumbers.reduce(function(acumulador, item){
-        acumulador += item
-        return acumulador
-    }, 0)
-    const media = soma/total
+        const total = allNumbers.length
+        const maior = Math.max(...allNumbers)
+        const menor = Math.min(...allNumbers)
+        const soma = allNumbers.reduce(function(acumulador, item){
+            acumulador += item
+            return acumulador
+        }, 0)
+        const media = soma/total
 
-    txtBox.innerHTML = 
-    `<p>Ao todo temos ${total} números cadastrados</p>
-    <p>O maior valor informado foi ${maior}</p>
-    <p>O menor valor informado foi ${menor}</p>
-    <p>A soma dos valores cadastrados é ${soma}</p>
-    <p>A média dos valores cadastrados é ${media}</p>`
+        txtBox.innerHTML = 
+        `<p>Ao todo temos ${total} números cadastrados</p>
+        <p>O maior valor informado foi ${maior}</p>
+        <p>O menor valor informado foi ${menor}</p>
+        <p>A soma dos valores cadastrados é ${soma}</p>
+        <p>A média dos valores cadastrados é ${media}</p>`
+    }
+    else{
+        alert('Não há números para analisar')
+    }
 }

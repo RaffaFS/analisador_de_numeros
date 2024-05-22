@@ -17,13 +17,14 @@ body{
         .title{
             margin: 32px auto;
             letter-spacing: 8px;
+            width: 90%;
         }
 
         .interface_box{
             background-color: rgb(22, 26, 48);
             max-width: 720px;
             width: 90%;
-            margin: 0 auto;
+            margin: 0 auto 32px;
             padding: 32px;
             border-radius: 8px;
 
@@ -43,12 +44,21 @@ body{
                 max-width: 640px;
                 width: 90%;
                 margin: 0 auto;
+                
+                @media(max-width: 767px){
+                    display: block;
+                }
 
                 .input_box{
                     display: flex;
                     gap: 32px;
                     max-width: 420px;
                     width: 100%;
+
+                    @media(max-width: 767px){
+                        display: block;
+                        margin-bottom: 16px;
+                    }
 
                     .number{
                         font-size: 16px;
@@ -57,7 +67,13 @@ body{
                         color: #000;
                         border-radius: 4px;
                         max-width: 140px;
-                        width: 90%;
+                        width: 100%;
+
+                        @media(max-width: 767px){
+                            margin-top: 8px;
+                            max-width: 240px;
+                            width: 90%;
+                        }
                     }
                     .number_label{
                         font-size: 24px;
@@ -71,6 +87,10 @@ body{
                 width: 90%;
                 display: flex;
                 justify-content: space-between;
+
+                @media(max-width: 767px){
+                    display: block;
+                }
                 
                 .numbers_box{
                     max-width: 210px;
@@ -78,6 +98,11 @@ body{
                     width: 90%;
                     background-color: #fff;
                     font-size: 14px;
+
+                    @media(max-width: 767px){
+                        margin: 0 auto;
+                        margin-bottom: 32px;
+                    }
 
                     p{
                         color: #000;
@@ -90,6 +115,10 @@ body{
                         text-align: end;
                         font-size: 20px;
                         margin-bottom: 8px;
+
+                        @media(max-width: 767px){
+                            text-align: center;
+                        }
                     }
                 }
             }
