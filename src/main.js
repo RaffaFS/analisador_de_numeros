@@ -8,27 +8,20 @@ btnS.addEventListener('click', analyse)
 
 function addNumber(e){
     e.preventDefault()
-    addDisplay()
-    addArray()
-}
-
-function addDisplay(){
     const number = parseInt(document.querySelector('#number').value)
     const numBox = document.querySelector('#numbers_box')
 
     if(number >=1 && number <=100){
-        numBox.innerHTML += `<p>O número ${number} foi adicionado</p>`
+        if(allNumbers.includes(number)){
+            alert('Valor já adicionado')
+        }
+        else{
+            numBox.innerHTML += `<p>O número ${number} foi adicionado</p>`
+            allNumbers.push(number)
+        }
     }
     else{
         alert('Valor inválido')
-    }
-}
-
-function addArray(){
-    const number = parseInt(document.querySelector('#number').value)
-
-    if(number >=1 && number <=100){
-        allNumbers.push(number)
     }
 }
 
