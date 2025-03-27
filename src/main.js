@@ -11,7 +11,7 @@ function addNumber(e){
     const number = parseInt(document.querySelector('#number').value)
     const numBox = document.querySelector('#numbers_box')
 
-    if(number >=1 && number <=100){
+    if(number >=1 && number <=1000){
         if(allNumbers.includes(number)){
             alert('Valor já adicionado')
         }
@@ -36,7 +36,7 @@ function analyse(){
             acumulador += item
             return acumulador
         }, 0)
-        const media = soma/total
+        const media = (soma/total).toFixed(2)
 
         txtBox.innerHTML = 
         `<p>Ao todo temos ${total} números cadastrados</p>

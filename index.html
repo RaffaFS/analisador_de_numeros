@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./src/favicon.png">
     <title>Analisador de Números</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,12 +13,10 @@
 <body>
     <div class="container">
         <h1 class="title">Analisador de Números</h1>
+        <h2 class="subtitle">Receba estatísticas a partir dos números adicionados</h2>
         <div class="interface_box">
             <form class="form" id="form">
-                <div class="input_box">
-                    <label for="number" class="number_label">Número de 1 à 100:</label>
-                    <input type="number" name="number" class="number" id="number" max="100" min="1">
-                </div>
+                <input placeholder="Numero de 1 à 1000" type="number" name="number" class="number" id="number" max="1000" min="1">
                 <button type="submit" class="btn" id="btn_add">Adicionar</button>
             </form>
             <div class="result_box">
